@@ -1,0 +1,617 @@
+{
+  "system" : "hyperMILL 2025",
+  "postProcessor" : "",
+  "version" : "",
+  "cadPart" : "P:/Project/5267_Sumiriko_Frame_01_31080/CAM/W5267NS01_061/W5267NS01061.hmc",
+  "operator" : "szborok",
+  "machine" : "DMU 65 monoblock",
+  "control" : "",
+  "usesToolNames" : true,
+  "programLevels" : "1",
+  "mainProgramName" : "",
+  "operationArea" : {
+    "min" : {
+      "x" : -83.74,
+      "y" : -70.50,
+      "z" : -29.34
+    },
+    "max" : {
+      "x" : 83.74,
+      "y" : 70.50,
+      "z" : 10.50
+    }
+  },
+  "clamping" : {
+    "pallet" : "",
+    "fixture" : "",
+    "viewerFiles" : [
+      "W5267NS01061A_ERB.pdf",
+      "W5267NS01061A_WDB.pdf"
+    ],
+    "pictureFiles" : [
+      "3A84_13C49527.gif",
+      "3A84_13C4966F.gif"
+    ]
+  },
+  "operations" : [
+    {
+    "number" : 1,
+    "operationPictureFile" : "3A84_13C497F6.gif",
+    "programName" : "W5267NS01061A1.h",
+    "description" : "1: M8_ALAFURAS_ISC-CSF10.3-8xD_Top:0|0_Bot:0|0_TÚL:0 ||| ",
+    "operation" : "openMIND Drilling Cycle",
+    "operationTime" : 6.0264706572393152,
+    "toolName" : "ISC-CSF10.3-8xD_H63H16L95",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C497C7.gif",
+      "holder" : "H63H16L95",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "ISC-CSF10.3-8xD_H63H16L95",
+      "unclampedLength" : 96.00,
+      "diameter" : 10.30,
+      "shankDiameter" : 20.00,
+      "edgeLength" : 87.60,
+      "totalLength" : 191.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -66.00,
+        "y" : -9.00,
+        "z" : -10.32
+      },
+      "max" : {
+        "x" : 66.00,
+        "y" : 7.00,
+        "z" : 5.00
+      }
+    },
+    "maxSpeed" : 2163.00,
+    "maxFeed" : 368,
+    "maxFeedAxis" : 368,
+    "reference" : "Spitze"
+    },
+    {
+    "number" : 2,
+    "operationPictureFile" : "3A84_13C4996D.gif",
+    "programName" : "W5267NS01061A2.h",
+    "description" : "2: D6.9-menetalap-CYCL200 ||| ",
+    "operation" : "openMIND Drilling Cycle",
+    "operationTime" : 5.5462618152845522,
+    "toolName" : "GUH-5512-BHF6.9_H63Z8L80",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4994E.gif",
+      "holder" : "H63Z8L80",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-5512-BHF6.9_H63Z8L80",
+      "unclampedLength" : 82.00,
+      "diameter" : 6.90,
+      "shankDiameter" : 8.00,
+      "edgeLength" : 74.00,
+      "totalLength" : 162.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -66.00,
+        "y" : 7.00,
+        "z" : -29.34
+      },
+      "max" : {
+        "x" : -66.00,
+        "y" : 7.00,
+        "z" : 2.43
+      }
+    },
+    "maxSpeed" : 3691.00,
+    "maxFeed" : 369,
+    "maxFeedAxis" : 369,
+    "reference" : "Spitze"
+    },
+    {
+    "number" : 3,
+    "operationPictureFile" : "3A84_13C49AF4.gif",
+    "programName" : "W5267NS01061A2.h",
+    "description" : "3: D6.9-menetalap-CYCL200 ||| ",
+    "operation" : "openMIND Drilling Cycle",
+    "operationTime" : 5.5424342562601625,
+    "toolName" : "GUH-5512-BHF6.9_H63Z8L80",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C49AC5.gif",
+      "holder" : "H63Z8L80",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-5512-BHF6.9_H63Z8L80",
+      "unclampedLength" : 82.00,
+      "diameter" : 6.90,
+      "shankDiameter" : 8.00,
+      "edgeLength" : 74.00,
+      "totalLength" : 162.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : 66.00,
+        "y" : -9.00,
+        "z" : -29.34
+      },
+      "max" : {
+        "x" : 66.00,
+        "y" : -9.00,
+        "z" : 2.40
+      }
+    },
+    "maxSpeed" : 3691.00,
+    "maxFeed" : 369,
+    "maxFeedAxis" : 369,
+    "reference" : "Spitze"
+    },
+    {
+    "number" : 4,
+    "operationPictureFile" : "3A84_13C49C7A.gif",
+    "programName" : "W5267NS01061A3.h",
+    "description" : "4: LT_M8_alafur_GUH-5678-KPF16 ||| ",
+    "operation" : "openMIND Drilling Cycle",
+    "operationTime" : 3.8116984833262739,
+    "toolName" : "GUH-5678-KPF16_H63W16L80X",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C49C4B.gif",
+      "holder" : "H63W16L80X",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-5678-KPF16_H63W16L80X",
+      "unclampedLength" : 63.00,
+      "diameter" : 16.00,
+      "shankDiameter" : 16.00,
+      "edgeLength" : 63.00,
+      "totalLength" : 143.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -66.00,
+        "y" : -9.00,
+        "z" : -5.65
+      },
+      "max" : {
+        "x" : 66.00,
+        "y" : 7.00,
+        "z" : -3.15
+      }
+    },
+    "maxSpeed" : 1001.00,
+    "maxFeed" : 100,
+    "maxFeedAxis" : 100,
+    "reference" : "Spitze"
+    },
+    {
+    "number" : 5,
+    "operationPictureFile" : "3A84_13C49DF1.gif",
+    "programName" : "W5267NS01061A4.h",
+    "description" : "5: NA_1_TGT-VLM20-L_DL:0_DR:0.5 ||| ",
+    "operation" : "openMIND 2D Contour Milling Cycle",
+    "operationTime" : 114.9301310395031237,
+    "toolName" : "TGT-VLM20-L_H63M10L25",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C49DD2.gif",
+      "holder" : "H63M10L25",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "TGT-VLM20-L_H63M10L25",
+      "unclampedLength" : 30.00,
+      "diameter" : 20.00,
+      "shankDiameter" : 20.00,
+      "edgeLength" : 30.00,
+      "cornerRadius" : 2.00,
+      "totalLength" : 80.99
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0.500,
+    "floorStock" :  0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -83.74,
+        "y" : -70.50,
+        "z" : -8.50
+      },
+      "max" : {
+        "x" : 83.74,
+        "y" : 70.50,
+        "z" : 10.50
+      }
+    },
+    "maxSpeed" : 2998.00,
+    "maxFeed" : 8995,
+    "maxFeedAxis" : 3000,
+    "reference" : "Spitze",
+    "offsetZ" : 0.00
+    },
+    {
+    "number" : 6,
+    "operationPictureFile" : "3A84_13C49F78.gif",
+    "programName" : "W5267NS01061A5.h",
+    "description" : "6: SIM_Kontur_R0_3x_GUH-6736-S6R0_DL:0_DR:0 ||| ",
+    "operation" : "openMIND 2D Contour Milling Cycle",
+    "operationTime" : 57.9757679165640312,
+    "toolName" : "GUH-6736-S6R0_H63WM6L65X",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C49F49.gif",
+      "holder" : "H63WM6L65X",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-6736-S6R0_H63WM6L65X",
+      "unclampedLength" : 21.00,
+      "diameter" : 6.00,
+      "shankDiameter" : 5.85,
+      "edgeLength" : 20.00,
+      "totalLength" : 86.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" :  0,
+    "floorStock" :  0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -78.74,
+        "y" : -33.00,
+        "z" : -8.50
+      },
+      "max" : {
+        "x" : 78.74,
+        "y" : 33.00,
+        "z" : 1.50
+      }
+    },
+    "maxSpeed" : 7427.00,
+    "maxFeed" : 1159,
+    "maxFeedAxis" : 579,
+    "reference" : "Spitze",
+    "offsetZ" : 0.00
+    },
+    {
+    "number" : 7,
+    "operationPictureFile" : "3A84_13C4A0EF.gif",
+    "programName" : "W5267NS01061A6.h",
+    "description" : "7: MSZ-TSZ_GUH-6736-S4R0_DL:0_DR:0+-0.1 ||| ",
+    "operation" : "3D Plane Machining Cycle",
+    "operationTime" : 13.6981824995129440,
+    "toolName" : "GUH-6736-S4R0_H63WM6L65X",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4A0D0.gif",
+      "holder" : "H63WM6L65X",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-6736-S4R0_H63WM6L65X",
+      "unclampedLength" : 21.00,
+      "diameter" : 4.00,
+      "shankDiameter" : null,
+      "edgeLength" : 18.00,
+      "totalLength" : 86.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : -0.100,
+    "floorStock" :  0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -5.09,
+        "y" : 67.89,
+        "z" : -12.40
+      },
+      "max" : {
+        "x" : 5.09,
+        "y" : 68.10,
+        "z" : 3.68
+      }
+    },
+    "maxSpeed" : 14324.00,
+    "maxFeed" : 802,
+    "maxFeedAxis" : 280,
+    "reference" : "Spitze",
+    "offsetHorizontal" : -0.10
+    },
+    {
+    "number" : 8,
+    "operationPictureFile" : "3A84_13C4A276.gif",
+    "programName" : "W5267NS01061A7.h",
+    "description" : "8: GRAV_FRA-SP0140-N-ES-G1R0.5-L25_DL:-0.1_DR:0 ||| ",
+    "operation" : "openMIND 2D Contour Milling Cycle",
+    "operationTime" : 32.5269670679652876,
+    "toolName" : "FRA-SP0140-N-ES-G1R0.5-L25_H63K6L120X",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4A247.gif",
+      "holder" : "H63K6L120X",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "FRA-SP0140-N-ES-G1R0.5-L25_H63K6L120X",
+      "unclampedLength" : 25.00,
+      "diameter" : 1.00,
+      "shankDiameter" : null,
+      "edgeLength" : 1.50,
+      "cornerRadius" : 0.50,
+      "totalLength" : 145.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : -0.100,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -5.42,
+        "y" : 67.06,
+        "z" : -12.50
+      },
+      "max" : {
+        "x" : 5.48,
+        "y" : 68.92,
+        "z" : -11.91
+      }
+    },
+    "maxSpeed" : 18000.00,
+    "maxFeed" : 500,
+    "maxFeedAxis" : 30,
+    "reference" : "Spitze",
+    "offsetZ" : -0.10
+    },
+    {
+    "number" : 9,
+    "operationPictureFile" : "3A84_13C4A3ED.gif",
+    "programName" : "W5267NS01061A8.h",
+    "description" : "9: LT_Kontur_KOM-VL-Letoro ||| ",
+    "operation" : "openMIND 2D Contour Milling Cycle",
+    "operationTime" : 12.8349507735870816,
+    "toolName" : "KOM-VL-Letoro_H63W16L80X",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4A3CD.gif",
+      "holder" : "H63W16L80X",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "KOM-VL-Letoro_H63W16L80X",
+      "unclampedLength" : 48.00,
+      "diameter" : 19.00,
+      "shankDiameter" : null,
+      "edgeLength" : 10.00,
+      "totalLength" : 128.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" :  0,
+    "floorStock" : -1.000,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -79.50,
+        "y" : -34.50,
+        "z" : -1.50
+      },
+      "max" : {
+        "x" : 79.50,
+        "y" : 44.50,
+        "z" : 3.50
+      }
+    },
+    "maxSpeed" : 5142.00,
+    "maxFeed" : 2262,
+    "maxFeedAxis" : 754,
+    "reference" : "Spitze",
+    "offsetZ" : -1.00
+    },
+    {
+    "number" : 10,
+    "operationPictureFile" : "3A84_13C4A573.gif",
+    "programName" : "W5267NS01061A9.h",
+    "description" : "10: D6.9-tisztito-CYCL200 ||| ",
+    "operation" : "openMIND Drilling Cycle",
+    "operationTime" : 3.6474682705691057,
+    "toolName" : "GUH-5512-BHF6.9_H63Z8L80",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4A544.gif",
+      "holder" : "H63Z8L80",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-5512-BHF6.9_H63Z8L80",
+      "unclampedLength" : 82.00,
+      "diameter" : 6.90,
+      "shankDiameter" : 8.00,
+      "edgeLength" : 74.00,
+      "totalLength" : 162.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -66.00,
+        "y" : 7.00,
+        "z" : -26.07
+      },
+      "max" : {
+        "x" : -66.00,
+        "y" : 7.00,
+        "z" : -6.07
+      }
+    },
+    "maxSpeed" : 3691.00,
+    "maxFeed" : 369,
+    "maxFeedAxis" : 369,
+    "reference" : "Spitze"
+    },
+    {
+    "number" : 11,
+    "operationPictureFile" : "3A84_13C4A6EA.gif",
+    "programName" : "W5267NS01061A9.h",
+    "description" : "11: D6.9-tisztito-CYCL200 ||| ",
+    "operation" : "openMIND Drilling Cycle",
+    "operationTime" : 3.6436407115447151,
+    "toolName" : "GUH-5512-BHF6.9_H63Z8L80",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4A6CB.gif",
+      "holder" : "H63Z8L80",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-5512-BHF6.9_H63Z8L80",
+      "unclampedLength" : 82.00,
+      "diameter" : 6.90,
+      "shankDiameter" : 8.00,
+      "edgeLength" : 74.00,
+      "totalLength" : 162.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : 66.00,
+        "y" : -9.00,
+        "z" : -26.07
+      },
+      "max" : {
+        "x" : 66.00,
+        "y" : -9.00,
+        "z" : -6.10
+      }
+    },
+    "maxSpeed" : 3691.00,
+    "maxFeed" : 369,
+    "maxFeedAxis" : 369,
+    "reference" : "Spitze"
+    },
+    {
+    "number" : 12,
+    "operationPictureFile" : "3A84_13C4A871.gif",
+    "programName" : "W5267NS01061A10.h",
+    "description" : "12: M8-menetfúrás-CYCL207 ||| ",
+    "operation" : "openMIND Tap Drilling Cycle",
+    "operationTime" : 8.1786553014225944,
+    "toolName" : "GUH-4630-MF_M8_H63PL100-MF",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4A842.gif",
+      "holder" : "H63PL100-MF",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-4630-MF_M8_H63PL100-MF",
+      "unclampedLength" : 48.50,
+      "diameter" : 8.00,
+      "shankDiameter" : 8.00,
+      "edgeLength" : 17.00,
+      "totalLength" : 161.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : -66.00,
+        "y" : 7.00,
+        "z" : -27.57
+      },
+      "max" : {
+        "x" : -66.00,
+        "y" : 7.00,
+        "z" : -8.07
+      }
+    },
+    "maxSpeed" : 239.00,
+    "maxFeed" : 299,
+    "maxFeedAxis" : 299,
+    "reference" : "Spitze"
+    },
+    {
+    "number" : 13,
+    "operationPictureFile" : "3A84_13C4A9E8.gif",
+    "programName" : "W5267NS01061A10.h",
+    "description" : "13: M8-menetfúrás-CYCL207 ||| ",
+    "operation" : "openMIND Tap Drilling Cycle",
+    "operationTime" : 8.1691620140585766,
+    "toolName" : "GUH-4630-MF_M8_H63PL100-MF",
+    "toolDetails" : {
+      "toolPictureFile" : "3A84_13C4A9C9.gif",
+      "holder" : "H63PL100-MF",
+      "extension" : "",
+      "extensionLength" : 0.00,
+      "tool" : "GUH-4630-MF_M8_H63PL100-MF",
+      "unclampedLength" : 48.50,
+      "diameter" : 8.00,
+      "shankDiameter" : 8.00,
+      "edgeLength" : 17.00,
+      "totalLength" : 161.00
+    },
+    "toolMagazinePosition" : -1,
+    "multiAxis" : "false",
+    "ncStop" : "false",
+    "sideStock" : 0,
+    "floorStock" : 0,
+    "zeroPoint" : "",
+    "spindleName" : "",
+    "operationArea" : {
+      "min" : {
+        "x" : 66.00,
+        "y" : -9.00,
+        "z" : -27.57
+      },
+      "max" : {
+        "x" : 66.00,
+        "y" : -9.00,
+        "z" : -8.10
+      }
+    },
+    "maxSpeed" : 239.00,
+    "maxFeed" : 299,
+    "maxFeedAxis" : 299,
+    "reference" : "Spitze"
+    }
+  ]
+}

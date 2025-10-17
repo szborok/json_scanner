@@ -1,0 +1,4 @@
+{
+  "processingType": "manual",        // or "automatic"
+  "autoInputPath": "D:/Borok/Private/_CODING/json_scanner/data"    // used only if processingType is "automatic"
+}

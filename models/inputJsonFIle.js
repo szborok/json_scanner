@@ -1,3 +1,5 @@
+// inputJsonFile.js
+
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
@@ -12,20 +14,16 @@ class InputJsonFile {
     }
 
     async init() {
-        this.filePath = await this.askFilePath();  // Wait for user input
+        this.filePath = await this.askFilePath();  // Prompt user
         if (!fs.existsSync(this.filePath)) {
             throw new Error('File does not exist: ' + this.filePath);
         }
 
-        this.folder = path.dirname(this.filePath);
-        this.fileName = path.basename(this.filePath);
-
-        const ext = path.extname(this.fileName);
-        const baseName = path.basename(this.fileName, ext);
-        this.fileNameFixed = `${baseName}_FIXED${ext}`;
-
-        this.fixNaNInJsonFile(); // Modify file contents (optional)
-        this.data = this.loadJson(); // Load JSON data
+        const result = InputJsonFile.prepareFile(this.filePath);
+        this.folder = result.folder;
+        this.fileName = result.fileName;
+        this.fileNameFixed = result.fileNameFixed;
+        this.data = result.data;
     }
 
     askFilePath() {
@@ -42,16 +40,33 @@ class InputJsonFile {
         });
     }
 
-    fixNaNInJsonFile() {
-        let content = fs.readFileSync(this.filePath, 'utf8');
-        content = content.replace(/: NaN/g, ': null');
-        const fixedPath = path.join(this.folder, this.fileNameFixed);
-        fs.writeFileSync(fixedPath, content, 'utf8');
-        console.log(`Fixed NaN values and saved to ${this.fileNameFixed}`);
-    }
+    static prepareFile(filePath) {
+        if (!fs.existsSync(filePath)) {
+            throw new Error('File does not exist: ' + filePath);
+        }
 
-    loadJson() {
-        return JSON.parse(fs.readFileSync(this.filePath, 'utf8'));
+        const folder = path.dirname(filePath);
+        const fileName = path.basename(filePath);
+        const ext = path.extname(fileName);
+        const baseName = path.basename(fileName, ext);
+        const fileNameFixed = `${baseName}_FIXED${ext}`;
+
+        // Fix NaNs
+        let content = fs.readFileSync(filePath, 'utf8');
+        content = content.replace(/: NaN/g, ': null');
+
+        const fixedPath = path.join(folder, fileNameFixed);
+        fs.writeFileSync(fixedPath, content, 'utf8');
+        console.log(`Fixed NaN values and saved to ${fileNameFixed}`);
+
+        const data = JSON.parse(content);
+
+        return {
+            folder,
+            fileName,
+            fileNameFixed,
+            data
+        };
     }
 }
 

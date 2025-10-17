@@ -3,30 +3,12 @@
 const fs = require("fs");
 const path = require("path");
 
-const Project = require("./models//Project");
+const Project = require("./models/Project.js");
 const RuleEngine = require("./rules/RuleEngine");
-const InputJsonFile = require("./models/inputJsonFile");
+const InputJsonFile = require("./models/processFile.js");
 
-const configPath = path.join(__dirname, "settings.json");
-const settings = JSON.parse(fs.readFileSync(configPath, "utf-8"));
-
-const fixedDir = path.resolve(
-  __dirname,
-  settings.fixedOutputPath || "./data/fixed"
-);
-const resultDir = path.resolve(
-  __dirname,
-  settings.resultOutputPath || "./data/result"
-);
-
-function ensureDirExists(dirPath) {
-  if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath, { recursive: true });
-  }
-}
-
-async function processFile(fileName, rawData, fixedPath, resultFilePath) {
-  const project = new Project(rawData);
+async function processFile(fileName, inputPath, fixedPath, resultFilePath) {
+  const project = new Project(inputPath);
 
   const fixedJson = JSON.stringify(project.toJSON(), null, 2);
   fs.writeFileSync(fixedPath, fixedJson, "utf-8");

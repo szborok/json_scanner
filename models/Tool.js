@@ -4,10 +4,7 @@ const ToolCategory = require("./ToolCategory");
 class Tool {
   constructor(name) {
     this.name = name;
-  }
-
-  isFinishingEndmill() {
-    return ToolCategory.belongsToCategory(this.name, "endmill_finish");
+    this.category = ToolCategory.getToolCategory(name);
   }
 
   isM110Required(operation) {
@@ -20,16 +17,6 @@ class Tool {
     }
     return ToolCategory.requiresM110(this.name);
   }
-
-  isCleaningTool() {
-    return ToolCategory.belongsToCategory(this.name, "cleaning");
-  }
-
-  isTouchProbeTool() {
-    return ToolCategory.belongsToCategory(this.name, "touchprobe");
-  }
-
-  // Add any other question methods here as needed...
 }
 
 module.exports = Tool;

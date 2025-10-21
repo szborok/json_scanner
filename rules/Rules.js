@@ -11,7 +11,7 @@ const {
   isM110Required4HelicalDrilling,
   isHelicalDrilling,
   isFinishingEndmill,
-} = require("./filter");
+} = require("./Filters");
 
 /**
  * Checks if all operations with the same programName use the same toolName.

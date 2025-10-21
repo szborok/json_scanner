@@ -1,6 +1,6 @@
 class ToolCategory {
   static categories = {
-    gundrill: {
+    Gundrill: {
       matchType: "partial",
       tools: [
         "GUH-1865",
@@ -17,15 +17,15 @@ class ToolCategory {
         "TOO-AF",
       ],
     },
-    endmill_finish: {
+    Endmill_finish: {
       matchType: "partial",
       tools: ["FRA-P15250", "FRA-P15251", "FRA-P15254", "FRA-P8521"],
     },
-    endmill_roughing: {
+    Endmill_roughing: {
       matchType: "partial",
       tools: ["GUH-6736", "GUH-6961", "FRA-P8420"],
     },
-    jjTools: {
+    JJTools: {
       matchType: "partial",
       tools: ["JJ"],
     },
@@ -37,11 +37,11 @@ class ToolCategory {
       matchType: "partial",
       tools: ["FRA-X7600", "FRA-X7604", "FRA-X7620", "FRA-X7624"],
     },
-    cleaning: {
+    Cleaning: {
       matchType: "exact",
       tools: ["G12R6-tisztito_H63Z12L120X"],
     },
-    touchprobe: {
+    Touchprobe: {
       matchType: "exact",
       tools: [
         "DMG-TAP75_H63-Renishaw-taszter-HSC75",
@@ -55,45 +55,18 @@ class ToolCategory {
     },
   };
 
-  static requiresM110Categories = ["endmill_finish", "jjTools", "TGT", "Xfeed"];
-
-  static requiresM110(toolName) {
-    return this.getToolCategories(toolName).some((cat) =>
-      this.requiresM110Categories.includes(cat)
-    );
-  }
-
-  static getToolCategories(toolName) {
-    const matched = [];
-
-    for (const [category, { matchType, tools }] of Object.entries(
-      this.categories
-    )) {
-      const found = tools.some((t) =>
-        matchType === "exact" ? t === toolName : toolName.includes(t)
-      );
-
-      if (found) matched.push(category);
+  getToolCategory(toolName) {
+    for (const [category, data] of Object.entries(ToolCategory.categories)) {
+      for (const tool of data.tools) {
+        if (
+          (data.matchType === "partial" && toolName.includes(tool)) ||
+          (data.matchType === "exact" && toolName === tool)
+        ) {
+          return category.toLowerCase();
+        }
+      }
     }
-
-    return matched;
-  }
-
-  static belongsToCategory(toolName, categoryName) {
-    const category = this.categories[categoryName];
-    if (!category) return false;
-
-    return category.tools.some((t) =>
-      category.matchType === "exact" ? t === toolName : toolName.includes(t)
-    );
-  }
-
-  static isCleaningTool(toolName) {
-    return this.belongsToCategory(toolName, "cleaning");
-  }
-
-  static isTouchProbe(toolName) {
-    return this.belongsToCategory(toolName, "touchprobe");
+    return null;
   }
 }
 

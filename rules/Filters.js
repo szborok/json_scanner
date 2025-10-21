@@ -8,17 +8,6 @@ function is2DContour(operation) {
   return operation.operation === "2D Contour";
 }
 
-function isFinishingEndmill(operation) {
-  return toolCategories.endmill_finish.includes(operation.toolName);
-}
-
-function isM110Required4HelicalDrilling(operation) {
-  return (
-    isHelicalDrilling(operation) &&
-    toolCategories.requireM110forHelicalDrilling.includes(operation.toolName)
-  );
-}
-
 function isCleaningTool(toolName) {
   return toolCategories.cleaning.includes(toolName);
 }

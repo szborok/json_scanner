@@ -32,7 +32,11 @@ class Paths {
       const stat = fs.statSync(filePath);
       if (stat && stat.isDirectory()) {
         results = results.concat(this.getAllJsonFiles(filePath));
-      } else if (path.extname(file) === '.json') {
+      } else if (
+        path.extname(file) === '.json' &&
+        !file.endsWith('_fixed.json') &&
+        !file.endsWith('_result.json')
+      ) {
         results.push(filePath);
       }
     }
@@ -40,17 +44,17 @@ class Paths {
   }
 
   getFixedPath(inputFilePath) {
-    // Save fixed JSON next to original with suffix ".fixed.json"
+    // Save fixed JSON next to original with suffix "_fixed.json"
     const dir = path.dirname(inputFilePath);
     const base = path.basename(inputFilePath, '.json');
-    return path.join(dir, `${base}.fixed.json`);
+    return path.join(dir, `${base}_fixed.json`);
   }
 
   getResultPath(inputFilePath) {
-    // Save analysis results with suffix ".result.json"
+    // Save analysis results with suffix "_result.json"
     const dir = path.dirname(inputFilePath);
     const base = path.basename(inputFilePath, '.json');
-    return path.join(dir, `${base}.result.json`);
+    return path.join(dir, `${base}_result.json`);
   }
 }
 
